@@ -198,3 +198,140 @@ body {
     text-align: center;
     line-height: 150px;
 }
+
+.totalbox {
+    float: right;
+    position: relative;
+    bottom: 100px;
+    width: 410px;
+    height: 500px;
+    border: 4px solid gray;
+    box-shadow: inset 0px 20px 40px -14px black,
+                inset 0px -20px 40px -14px black;
+    background: rgb(206,220,231); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(206,220,231,1) 0%, rgba(89,106,114,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(206,220,231,1)), color-stop(100%,rgba(89,106,114,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  rgba(206,220,231,1) 0%,rgba(89,106,114,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  rgba(206,220,231,1) 0%,rgba(89,106,114,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  rgba(206,220,231,1) 0%,rgba(89,106,114,1) 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(206,220,231,1) 0%,rgba(89,106,114,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cedce7', endColorstr='#596a72',GradientType=0 ); /* IE6-9 */
+    p {
+        font-size: 20px;
+        font-weight: bolder;
+        position: relative;
+        margin-left: 10px;
+        line-height: 12px;
+        bottom: 14px;
+        font-weight: bolder;
+    }
+}
+
+.itemizer {
+    margin-top: 30px;
+    margin-left: 30px;
+    height: 360px;
+    width: 350px;
+    background-color: rgba(255, 255, 255, 0.75);
+    overflow: scroll;
+    border: 5px solid gray;
+}
+
+.mainmenu {
+    float: left;
+    
+}
+
+.button {
+    list-style-type: none;
+    cursor: pointer;
+    height: 100px;
+    width: 200px;
+    background-image: url(http://media.tumblr.com/35c3bda753db8ec0140b800d0c9d3227/tumblr_inline_mqaoa649gH1qz4rgp.jpg);
+    border-radius: 8px;
+    display: inline-block;
+    margin-right: 20px;
+    margin-top: 25px;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    line-height: 100px;
+    border: 3px solid blue;
+   }
+.ccoptions {
+    padding: 0px;
+    margin: 0 auto;
+}
+
+.ccvlogo {
+    list-style-type: none;
+    margin-left: 5px;
+    height: 75px;
+    width: 97px;
+    background-image: url(http://www.mindworksmc.com.au/images/Clients%20Logos/Visa.gif);
+    bottom: 0;
+    display: inline-block;
+}
+.ccmlogo {
+    list-style-type: none;
+    //margin-top: 480px;
+    height: 75px;
+    width: 97px;
+    background-image: url(http://www.trailer-traders.co.uk/static/images/logos/mastercard.png);
+    bottom: 0;
+    display: inline-block;
+}
+.ccdlogo {
+    list-style-type: none;
+    //margin-top: 480px;
+    height: 75px;
+    width: 97px;
+    background-image: url(http://cdn2.dealscience.com/uploads/brand/logo/3635/discover-home-loans-promo-code-779e73.jpg);
+    bottom: 0;
+    display: inline-block;
+}
+.ccalogo {
+    list-style-type: none;
+    //margin-top: 480px;
+    height: 75px;
+    width: 97px;
+    background-image: url(http://www.training-up.com/v/vspfiles/assets/images/American_Express_Logo_small.jpg);
+    bottom: 0;
+    display: inline-block;
+}
+
+.print {
+    border-radius: 8px;
+    margin-right: 5px;
+    display: inline-block;
+    list-style-type: none;
+    width: 175px;
+    height: 100px;
+    background-image: url(http://dev.w3.org/csswg/css-images-3/radial1.png);
+    text-align: center;
+    font-weight: bolder;
+    //color: white;
+    line-height: 100px;
+    font-size: 25px;
+    cursor: pointer;
+    position: relative;
+    right: 25px;
+    top: 40px;
+}
+.printmaster {
+    width: 410px;
+    float: right;
+    margin-bottom: 20px;
+    position: relative;
+    bottom: 100px;
+}
+.printoptions {
+    position: relative;
+
+
+}
+
+.ccoptions {
+    position: relative;
+    bottom: 24px;
+}

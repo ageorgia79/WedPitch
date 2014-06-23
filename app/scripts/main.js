@@ -58,7 +58,25 @@ var LayoutView = Parse.View.extend({
 
   events: {
 
-    "click .hightop1": "showOrderView"
+    "click .hightop1": "showOrderView",
+    "click .hightop2": "showOrderView",
+    "click .table-101": "showOrderView",
+    "click .table-102": "showOrderView",
+    "click .table-103": "showOrderView",
+    "click .table-104": "showOrderView",
+    "click .booth-1": "showOrderView",
+    "click .booth-2": "showOrderView",
+    "click .booth-3": "showOrderView",
+    "click .booth-4": "showOrderView",
+    "click .stool-1": "showOrderView",
+    "click .stool-2": "showOrderView",
+    "click .stool-3": "showOrderView",
+    "click .stool-4": "showOrderView",
+    "click .stool-5": "showOrderView",
+    "click .stool-6": "showOrderView",
+    "click .stool-7": "showOrderView",
+    "click .stool-8": "showOrderView"
+
   },
 
   initialize: function(){
@@ -76,7 +94,7 @@ var LayoutView = Parse.View.extend({
 
   showOrderView: function(){
     var order = new OrderView({model: this.model});
-    $('.container').append(order);
+    //$('.container').append(order);
   }
 
 
@@ -86,7 +104,26 @@ var LayoutView = Parse.View.extend({
 
 var OrderView = Parse.View.extend({
 
-})
+  className: "coolest",
+
+  orderTemplate: _.template($('.order-template').text()),
+
+  events: {
+
+  },
+
+  initialize: function(){
+    $('.container').empty();
+    $('.container').append(this.el);
+    this.render();
+  },
+
+  render: function(){
+    var renderedTemplate = this.orderTemplate(this.model);
+    this.$el.html(renderedTemplate);
+  }
+
+});
 
 
 
