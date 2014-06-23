@@ -18,6 +18,7 @@ var LoginCollection = Parse.Collection.extend({
 var collection = new LoginCollection();
 
 
+
 var LoginView = Parse.View.extend({
 
   className: "cool",
@@ -110,6 +111,8 @@ var OrderView = Parse.View.extend({
 
   events: {
 
+    "click .send": "showLoginView"
+
   },
 
   initialize: function(){
@@ -121,6 +124,12 @@ var OrderView = Parse.View.extend({
   render: function(){
     var renderedTemplate = this.orderTemplate(this.model);
     this.$el.html(renderedTemplate);
+  },
+
+  showLoginView: function(){
+    this.remove();
+    var login = new LoginView({model: this.model});
+
   }
 
 });
