@@ -1,0 +1,200 @@
+// bower:scss
+// endbower
+
+body {
+    background-color: black;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #333;
+}
+
+.container {
+    width: 100%;
+    
+}
+
+.header {
+    background-color: black;
+    margin: 0px;
+    width: 65%;
+    height: 100px;
+    h1 {
+        font-family: 'Audiowide', cursive;
+        color: rgb(91, 153, 229);
+        font-size: 100px;
+        margin: 0 auto;
+        margin-left: 30px;
+    }
+}
+
+.login {
+    position: relative;
+    top: 50px;
+    margin: 0 auto;
+    width: 500px;
+    height: 550px;
+    background-color: rgb(212, 204, 204);
+}
+
+.password {
+    width: 350px;
+    height: 50px;
+    position: relative;
+    font-size: 30px;
+    font-weight: bolder;
+    border: 2px solid black;
+    top: 20px;
+    left: 70px;
+}
+
+.submit {
+    list-style-type: none;
+    cursor: pointer;
+    height: 100px;
+    width: 200px;
+    background-image: url(http://blog.learntoprogram.tv/wp-content/uploads/2013/12/Button.png);
+    border-radius: 18px;
+    display: inline-block;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    line-height: 100px;
+    border: 3px solid black;
+    position: absolute;
+    margin-left: 105px;
+    bottom: 0;
+    
+
+}
+
+.number {
+    list-style-type: none;
+    display: inline-block;
+    margin-bottom: 25px;
+    margin-right: 30px;
+    position: relative;
+    top: 24px;
+    left: 70px;
+    width: 60px;
+    height: 60px;
+    border: 2px solid black;
+    line-height: 60px;
+    text-align: center;
+    color: white;
+    background-color: gray;
+}
+
+.table {
+    list-style-type: none;
+    cursor: pointer;
+    height: 100px;
+    width: 100px;
+    display: block;
+    margin-top: 60px;
+    background-image: url(http://cdn.thumbr.io/aa94cbf2ddf4e398a0084f83f89fd28b/KhPZbWboUluRxv8PG87L/i.istockimg.com/file_thumbview_approve/19079506/3/stock-illustration-19079506-wooden-background.jpg/100/thumb.jpg);
+    text-align: center;
+    border: 3px solid blue;
+    transform: rotate(45deg);
+    position: relative;
+    
+}
+
+
+.table  h1 {
+        //color: white;
+        font-size: 30px;
+        text-align: center;
+        line-height: 60px;
+        transform: rotate(-45deg);
+}
+
+.bar {
+    float: right;
+    width: 200px;
+    height: 600px;
+    border: 3px solid blue;
+    background-image: url(http://www.krworkshops.com/images/BackgroundLeft2.gif);
+    h1 {
+        color: white;
+        text-align: center;
+        position: relative;
+        top: 230px;
+        
+    }
+}
+
+.stool {
+    color: white;
+    list-style-type: none;
+    height: 45px;
+    width: 45px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 30px;
+    cursor: pointer;
+    border: 3px solid blue;
+    background-image: url(http://img.stockfresh.com/files/c/clearviewstock/x/82/705015_13436385.jpg);
+    line-height: 45px;
+    position: relative;
+    right: 110px;
+    bottom: 320px;
+    border-radius: 100px;
+  
+}
+
+.booth {
+    display: inline-block;
+    left: 200px;
+    margin-right: 125px;
+    position: relative;
+    bottom: 125px;
+    height: 150px;
+    cursor: pointer;
+    width: 90px;
+    border: 3px solid blue;
+    background-image: url(http://cdn.thumbr.io/aa94cbf2ddf4e398a0084f83f89fd28b/KhPZbWboUluRxv8PG87L/i.istockimg.com/file_thumbview_approve/19079506/3/stock-illustration-19079506-wooden-background.jpg/100/thumb.jpg);
+    //color: white;
+    font-size: 30px;
+    line-height: 150px;
+    text-align: center;
+    
+}
+
+.angletables {
+    width: 200px;
+    margin: 0px;
+
+}
+
+.hightop1 {
+    list-style-type: none;
+    //color: white;
+    font-size: 30px;
+    text-align: center;
+    cursor: pointer;
+    line-height: 150px;
+    position: relative;
+    background-image: url(http://cdn.thumbr.io/aa94cbf2ddf4e398a0084f83f89fd28b/KhPZbWboUluRxv8PG87L/i.istockimg.com/file_thumbview_approve/19079506/3/stock-illustration-19079506-wooden-background.jpg/100/thumb.jpg);
+    right: 550px;
+    top: 50px;
+    height: 150px;
+    width: 150px;
+    border: 3px solid blue;
+    border-radius: 100px;
+}
+
+.hightop2 {
+    position: relative;
+    right: 375px;
+    top: 75px;
+    height: 150px;
+    cursor: pointer;
+    width: 150px;
+    border: 3px solid blue;
+    border-radius: 100px;
+    background-image: url(http://cdn.thumbr.io/aa94cbf2ddf4e398a0084f83f89fd28b/KhPZbWboUluRxv8PG87L/i.istockimg.com/file_thumbview_approve/19079506/3/stock-illustration-19079506-wooden-background.jpg/100/thumb.jpg);
+    list-style-type: none;
+    //color: white;
+    font-size: 30px;
+    text-align: center;
+    line-height: 150px;
+}
