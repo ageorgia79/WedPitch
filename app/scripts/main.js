@@ -27,7 +27,8 @@ var LoginView = Parse.View.extend({
 
   events: {
 
-    "click .submit": "showLayoutView"
+    "click .submit": "showClockinModal",
+    "click .yes": "showLayoutView"
   },
 
   initialize: function(){
@@ -45,6 +46,12 @@ var LoginView = Parse.View.extend({
     console.log(this.model)
     new LayoutView();
     // $('.container').append(layout);
+  },
+
+  showClockinModal: function(){
+    var modal = document.getElementById('clockinoverlay');
+    modal.style.visibility = (modal.style.visibility == "visible") ? "hidden":"visible";
+
   }
 });
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -112,7 +119,9 @@ var OrderView = Parse.View.extend({
   events: {
 
     "click .go-button": "showLoginView",
-    "click .entrees-button": "showEntreesView"
+    "click .entrees-button": "showEntreesView",
+    "click .void": "showManagerModal",
+    "click .numberenter": "showOrderView"
     
 
   },
@@ -136,6 +145,16 @@ var OrderView = Parse.View.extend({
 
   showEntreesView: function(){
     var entree = new EntreeView({model: this.model});
+  },
+
+  showManagerModal: function(){
+    var modal = document.getElementById('overlay');
+    modal.style.visibility = (modal.style.visibility == "visible") ? "hidden":"visible";
+  },
+
+  showOrderView: function(){
+    this.remove();
+    var order = new OrderView({model: this.model});
   }
 
 });
