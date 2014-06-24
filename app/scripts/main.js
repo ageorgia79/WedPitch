@@ -207,7 +207,7 @@ var SidesView = Parse.View.extend({
 
   events: {
 
-    "click .fries": "showOrderView"
+    "click .fries": "showModView"
 
   },
 
@@ -219,6 +219,35 @@ var SidesView = Parse.View.extend({
 
   render: function(){
     var renderedTemplate = this.sidesTemplate(this.model);
+    this.$el.html(renderedTemplate);
+  },
+
+  showModView: function(){
+    var mod = new EntreeModView({model: this.model});
+  }
+});
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+var EntreeModView = Parse.View.extend({
+
+  className: "super",
+
+  modTemplate: _.template($('.entree-mod-template').text()),
+
+  events: {
+
+    "click .done": "showOrderView"
+
+  },
+
+  initialize: function(){
+    $('.container').empty();
+    $('.container').append(this.el);
+    this.render();
+  },
+
+  render: function(){
+    var renderedTemplate = this.modTemplate(this.model);
     this.$el.html(renderedTemplate);
   },
 

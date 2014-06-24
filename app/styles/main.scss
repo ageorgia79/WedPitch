@@ -258,81 +258,7 @@ body {
     border: 5px solid gray;
 }
 
-.totalbox1 {
-    float: right;
-    position: relative;
-    bottom: 263px;
-    width: 410px;
-    height: 500px;
-    border: 4px solid gray;
-    box-shadow: inset 0px 20px 40px -14px black,
-                inset 0px -20px 40px -14px black;
-    background: rgb(206,220,231); /* Old browsers */
-    background: -moz-linear-gradient(top,  rgba(206,220,231,1) 0%, rgba(89,106,114,1) 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(206,220,231,1)), color-stop(100%,rgba(89,106,114,1))); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top,  rgba(206,220,231,1) 0%,rgba(89,106,114,1) 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top,  rgba(206,220,231,1) 0%,rgba(89,106,114,1) 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(top,  rgba(206,220,231,1) 0%,rgba(89,106,114,1) 100%); /* IE10+ */
-    background: linear-gradient(to bottom,  rgba(206,220,231,1) 0%,rgba(89,106,114,1) 100%); /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cedce7', endColorstr='#596a72',GradientType=0 ); /* IE6-9 */
-    p {
-        font-size: 20px;
-        font-weight: bolder;
-        position: relative;
-        margin-left: 10px;
-        line-height: 12px;
-        bottom: 14px;
-        font-weight: bolder;
-    }
-}
 
-.itemizer1 {
-    margin-top: 30px;
-    margin-left: 30px;
-    height: 360px;
-    width: 350px;
-    background-color: rgba(255, 255, 255, 0.75);
-    overflow: scroll;
-    border: 5px solid gray;
-}
-
-.totalbox2 {
-    float: right;
-    position: relative;
-    bottom: 394px;
-    width: 410px;
-    height: 500px;
-    border: 4px solid gray;
-    box-shadow: inset 0px 20px 40px -14px black,
-                inset 0px -20px 40px -14px black;
-    background: rgb(206,220,231); /* Old browsers */
-    background: -moz-linear-gradient(top,  rgba(206,220,231,1) 0%, rgba(89,106,114,1) 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(206,220,231,1)), color-stop(100%,rgba(89,106,114,1))); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top,  rgba(206,220,231,1) 0%,rgba(89,106,114,1) 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top,  rgba(206,220,231,1) 0%,rgba(89,106,114,1) 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(top,  rgba(206,220,231,1) 0%,rgba(89,106,114,1) 100%); /* IE10+ */
-    background: linear-gradient(to bottom,  rgba(206,220,231,1) 0%,rgba(89,106,114,1) 100%); /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cedce7', endColorstr='#596a72',GradientType=0 ); /* IE6-9 */
-    p {
-        font-size: 20px;
-        font-weight: bolder;
-        position: relative;
-        margin-left: 10px;
-        line-height: 12px;
-        bottom: 14px;
-        font-weight: bolder;
-    }
-}
-
-.itemizer2 {
-    margin-top: 30px;
-    margin-left: 30px;
-    height: 360px;
-    width: 350px;
-    background-color: rgba(255, 255, 255, 0.75);
-    overflow: scroll;
-    border: 5px solid gray;
-}
 
 .mainmenu {
     float: left;
@@ -358,6 +284,81 @@ body {
     //text-shadow: 1px 1px 60px white;
     
 }
+
+.green {
+    list-style-type: none;
+    cursor: pointer;
+    height: 100px;
+    width: 200px;
+    background-image: url(http://dev.w3.org/csswg/css-images-3/radial1.png);
+    border-radius: 8px;
+    display: inline-block;
+    margin-right: 20px;
+    margin-top: 25px;
+    text-align: center;
+    font-size: 30px;
+    line-height: 100px;
+    border: 3px solid blue;
+    box-shadow: 0 10px 35px -8px red;
+
+}
+
+.orange {
+    list-style-type: none;
+    cursor: pointer;
+    height: 100px;
+    width: 200px;
+    background-image: url(http://media.tumblr.com/3835a698ad0155fc3240c9e81c07b95c/tumblr_inline_mqaogeq7xE1qz4rgp.jpg);
+    border-radius: 8px;
+    display: inline-block;
+    margin-right: 20px;
+    margin-top: 25px;
+    text-align: center;
+    font-size: 30px;
+    line-height: 100px;
+    border: 3px solid blue;
+    box-shadow: 0 10px 35px -8px red;
+
+}
+
+.red {
+    list-style-type: none;
+    cursor: pointer;
+    height: 100px;
+    width: 200px;
+    background-image: url(http://stylebust.com/wp-content/uploads/2011/05/illamasqua_box.jpg);
+    border-radius: 8px;
+    display: inline-block;
+    color: white;
+    margin-right: 20px;
+    margin-top: 25px;
+    text-align: center;
+    font-size: 30px;
+    line-height: 100px;
+    border: 3px solid blue;
+    box-shadow: 0 10px 35px -8px red;
+
+}
+
+.gray {
+    list-style-type: none;
+    cursor: pointer;
+    height: 100px;
+    width: 200px;
+    background-color: gray;
+    border-radius: 8px;
+    display: inline-block;
+    margin-right: 20px;
+    margin-top: 25px;
+    text-align: center;
+    font-size: 30px;
+    line-height: 100px;
+    border: 3px solid blue;
+    box-shadow: 0 10px 35px -8px red;
+
+}
+
+
 
 .side {
     list-style-type: none;
@@ -440,6 +441,24 @@ body {
     right: 25px;
     top: 40px;
     box-shadow: 0 10px 35px -6px blue;
+}
+
+.done {
+    float: right;
+    border-radius: 8px;
+    list-style-type: none;
+    width: 175px;
+    height: 100px;
+    background-image: url(http://dev.w3.org/csswg/css-images-3/radial1.png);
+    text-align: center;
+    font-weight: bolder;
+    line-height: 100px;
+    font-size: 25px;
+    cursor: pointer;
+    box-shadow: 0 10px 35px -6px blue;
+    position: relative;
+    bottom: 120px;
+    right: 120px;
 }
 
 .gostaybutton {
