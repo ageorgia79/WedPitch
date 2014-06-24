@@ -113,6 +113,7 @@ var OrderView = Parse.View.extend({
 
     "click .go-button": "showLoginView",
     "click .entrees-button": "showEntreesView"
+    
 
   },
 
