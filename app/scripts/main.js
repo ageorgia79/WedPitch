@@ -111,7 +111,8 @@ var OrderView = Parse.View.extend({
 
   events: {
 
-    "click .go-button": "showLoginView"
+    "click .go-button": "showLoginView",
+    "click .entrees-button": "showEntreesView"
 
   },
 
@@ -130,8 +131,101 @@ var OrderView = Parse.View.extend({
     this.remove();
     var login = new LoginView({model: this.model});
 
+  },
+
+  showEntreesView: function(){
+    var entree = new EntreeView({model: this.model});
   }
 
+});
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+var EntreeView = Parse.View.extend({
+
+  className: "better",
+
+  entreeTemplate: _.template($('.entree-template').text()),
+
+  events: {
+
+    "click .prime-rib": "showTempsView"
+
+  },
+
+  initialize: function(){
+    $('.container').empty();
+    $('.container').append(this.el);
+    this.render();
+  },
+
+  render: function(){
+    var renderedTemplate = this.entreeTemplate(this.model);
+    this.$el.html(renderedTemplate);
+  },
+
+  showTempsView: function(){
+    var temp = new TempsView({model: this.model});
+  }
+});
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+var TempsView = Parse.View.extend({
+
+  className: "betterer",
+
+  tempsTemplate: _.template($('.temp-template').text()),
+
+  events: {
+
+    "click .rare": "showSidesView"
+
+  },
+
+  initialize: function(){
+    $('.container').empty();
+    $('.container').append(this.el);
+    this.render();
+  },
+
+  render: function(){
+    var renderedTemplate = this.tempsTemplate(this.model);
+    this.$el.html(renderedTemplate);
+  },
+
+  showSidesView: function(){
+    var sides = new SidesView({model: this.model});
+  }
+
+});
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+var SidesView = Parse.View.extend({
+
+  className: "awesome",
+
+  sidesTemplate: _.template($('.sides-template').text()),
+
+  events: {
+
+    "click .fries": "showOrderView"
+
+  },
+
+  initialize: function(){
+    $('.container').empty();
+    $('.container').append(this.el);
+    this.render();
+  },
+
+  render: function(){
+    var renderedTemplate = this.sidesTemplate(this.model);
+    this.$el.html(renderedTemplate);
+  },
+
+  showOrderView: function(){
+    this.remove();
+    var order = new OrderView({model: this.model});
+  }
 });
 
 
