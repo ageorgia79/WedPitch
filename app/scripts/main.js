@@ -203,6 +203,8 @@ var PaymentView = Parse.View.extend({
 
   events: {
 
+    "click .credit-amex": "showLoginView",
+
   },
 
   initialize: function(){
@@ -214,6 +216,11 @@ var PaymentView = Parse.View.extend({
   render: function(){
     var renderedTemplate = this.paymentTemplate(this.model);
     this.$el.html(renderedTemplate);
+  },
+
+  showLoginView: function(){
+    this.remove();
+    var login = new LoginView({model: this.model});
   }
 });
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
