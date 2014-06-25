@@ -121,7 +121,8 @@ var OrderView = Parse.View.extend({
     "click .go-button": "showLoginView",
     "click .entrees-button": "showEntreesView",
     "click .void": "showManagerModal",
-    "click .numberenter": "showOrderView"
+    "click .numberenter": "showOrderView",
+    "click .payment-button": "showPaymentView"
     
 
   },
@@ -155,6 +156,11 @@ var OrderView = Parse.View.extend({
   showOrderView: function(){
     this.remove();
     var order = new OrderView({model: this.model});
+  },
+
+  showPaymentView: function(){
+    this.remove();
+    var payment = new PaymentView({model: this.model});
   }
 
 });
@@ -188,6 +194,29 @@ var EntreeView = Parse.View.extend({
   }
 });
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+var PaymentView = Parse.View.extend({
+
+  className: "weird",
+
+  paymentTemplate: _.template($('.payment-template').text()),
+
+  events: {
+
+  },
+
+  initialize: function(){
+    $('.container').empty();
+    $('.container').append(this.el);
+    this.render();
+  },
+
+  render: function(){
+    var renderedTemplate = this.paymentTemplate(this.model);
+    this.$el.html(renderedTemplate);
+  }
+});
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 var TempsView = Parse.View.extend({
 
